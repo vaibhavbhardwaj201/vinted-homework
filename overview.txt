@@ -1,0 +1,22 @@
+I made this project using Vite, you can run this project by running "npm install" and then "npm run dev" command
+
+
+Here I am writing description of my code and Ideas how we can improve this
+
+1. I used Flickr API as it was recommended, but there are some limitations of this API. It only provides title of images and sometimes empty title.
+So, in case title is not present, it will print "Not Available". And as design provided in assignment, Author name is not available by api, so i printed id.
+
+2. Implemented Add to favourite and remove from favourite section, data is stored in local storage of browser so it will persist evern after page refresh. And there is infinite-scrolling.
+
+3. As an additional functionality, I Implemented search bar option, users can search images of their choice. By pressing Enter or search button.
+
+<<<<<<<<<< How to implement lazy loading >>>>>>>>>>>>
+
+4. Due to exams, I was not able to implement lazy loading also I am not sure if I have to submit it on 13th April or 14th April. But lazy loading can be achieved by third party library 'react-lazyload' but we can do it by using Intersection Observer Api of browser as well
+    - by setting up intersection observer in useEffect hook to check if image is in viewport or not
+    - then using ternary operator on src attribute and set image url to '' if image is out of viewport
+
+
+5. We can make this code more readable by code splitting
+
+6. I tried to make this UI as close as possible hope this is good enough to clear this practical assignment
